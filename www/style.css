@@ -1,0 +1,69 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.3em;
+  background-color: #fbfffa;
+  color: #1e0039;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+html {
+  font-size: 16px;
+  padding: 1rem 2rem;
+}
+
+/* This class aims to reduce clutter around the task at hand */
+.temp-focus {
+  margin: 150px 0 200px 0;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.2em; }
+
+input { background-color: #fff; }
+
+input,
+button,
+.inline-code {
+  padding: 0.5ch 1ch;
+}
+
+code {
+  background-color: #fff;
+  line-height: 1.4em;
+  font-weight: strong;
+  padding: 1em;
+  font-family: monospace;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.inline {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.inline li {
+  font-size: 0.9em;
+  list-style: none;
+  display: inline;
+  padding-right: 1ch;
+}
+
+li { 
+  margin-bottom: 0.5em;
+}
+
+#error {
+  color: crimson;
+}

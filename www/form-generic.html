@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Generic form - HTML Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="inline">
+      <li><a href="/">Home</a></li>
+      <li>Generic form</li>
+      <li><a href="/form-grid.html">Grid form</a></li>
+    </ul>
+  </nav>
+  <h1>Generic form</h1>
+  <p>
+    Plain as possible.<br>
+    HTML validation only.<br>
+    No error handling.
+  </p>
+  <h2 lang="de">Das Formular</h2>
+
+  <form action="thanks.html" onsubmit="return handleFrontEndSubmit(event)">
+    <label for="email">
+      <input type="email" id="email" name="user_email" required>
+    </label>
+    <button type="submit">Sign up</button>
+  </form>
+
+  <h2 lang="de">Die Ergebnisse</h2>
+  <p>What were the findings of your experiment?</p>
+  <ul>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <h2 lang="de">Noch Fragen?</h2>
+  <p>What questions came up during your experiment?</p>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <script>
+    function handleFrontEndSubmit(event) {
+      event.preventDefault();
+      alert(document.querySelector('#email').value);
+      return false;
+    }
+  </script>
+
+</body>
+
+</html>
