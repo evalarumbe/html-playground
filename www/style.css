@@ -21,14 +21,50 @@ html {
   padding: 1rem 2rem;
 }
 
-/* This class aims to reduce clutter around the task at hand */
-.temp-focus {
-  margin: 150px 0 200px 0;
+h1 {
+  font-size: 2em;
 }
 
-h1 { font-size: 2em; }
+h2 {
+  font-size: 1.2em;
+}
 
-h2 { font-size: 1.2em; }
+nav, h1, h2, p, a, ul, li, form {
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /* transparent */
+}
+
+a { color: hsl(180, 100%, 40%); }
+
+/* Layout */
+
+header {
+  background-color: #ffe180;
+}
+
+section {
+}
+
+.col-left {
+  background-color: #eba059;
+}
+
+.col-middle {
+  background-color: #8b3c76;
+}
+
+.col-right {
+  background-color: #41245c;
+}
+
+footer {
+  background-color: #b9e382;
+}
+
+
+
+
+/* Forms */
 
 input { background-color: #fff; }
 
