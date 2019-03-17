@@ -19,6 +19,7 @@
 html {
   font-size: 16px;
   padding: 1rem 2rem;
+  background-color: whitesmoke;
 }
 
 h1 {
@@ -29,7 +30,12 @@ h2 {
   font-size: 1.2em;
 }
 
-nav, h1, h2, p, a, ul, li, form {
+h3 {
+  font-weight: normal;
+  opacity: 0.95;
+}
+
+nav, h1, h2, h3, p, a, ul, ol, li, form {
   color: white;
   background-color: rgba(0, 0, 0, 0); /* transparent */
 }
@@ -40,25 +46,55 @@ a { color: hsl(180, 100%, 40%); }
 
 header {
   background-color: #ffe180;
+  padding: 1em;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+}
+
+main::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 section {
+  padding: 1%;
 }
 
 .col-left {
   background-color: #eba059;
+  float: left;
+  width: calc(94%/3);
 }
 
 .col-middle {
   background-color: #8b3c76;
+  float: left;
+  width: calc(94%/3);
 }
 
 .col-right {
   background-color: #41245c;
+  float: right;
+  width: calc(94%/3);
+}
+
+.output {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  border-top: 1px solid rgba(0,0,0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0,0,0, 0.1);
 }
 
 footer {
   background-color: #b9e382;
+  color: rgba(65,79,47,1);
+  padding: 1em;
 }
 
 
