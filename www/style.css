@@ -44,6 +44,10 @@ a { color: hsl(180, 100%, 40%); }
 
 /* Layout */
 
+li {
+  margin-bottom: 1em;
+}
+
 header {
   background-color: #ffe180;
   padding: 1em;
