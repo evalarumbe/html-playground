@@ -4,26 +4,32 @@ const fizzBuzz = [];
 // cons: checks all conditionals every time
 // pros: readable, only calls console.log once
 fizzBuzz[0] = n => {
-  let result = '';
+  const lines = [];
+  let line = '';
+
   console.log('\n\nfizzBuzz[0]');
+  
   for (let i = 1; i <= n; i++) {
-    result = '';
+    line = '';
 
     if (i % 3 === 0) {
-      result += 'Fizz';
+      line += 'Fizz';
     }
     if (i % 5 === 0) {
-      result += 'Buzz';
+      line += 'Buzz';
     }
-    if (result.length === 0) {
-      result += i;
+    if (line.length === 0) {
+      line += i;
     }
 
-    console.log(result);
+    console.log(line);
+    lines[i-1] = line;
   }
+  return lines;
 };
 
 // else if (rarest case first)
+// console only
 // pros: only calls console.log once without needing to store a buffer in memory
 // conditions are checked less often
 
@@ -44,22 +50,50 @@ fizzBuzz[1] = n => {
 
 // best of both worlds
 fizzBuzz[2] = n => {
+  const lines = [];
+  let line = '';
+  
   console.log('\n\nfizzBuzz[2]');
-  let result = '';
 
   for (let i = 1; i <= n; i++) {
-    result = '';
+    line = '';
     if (i % 15 === 0) {
-      result += 'FizzBuzz';
+      line += 'FizzBuzz';
     } else if (i % 3 === 0) {
-      result += 'Fizz';
+      line += 'Fizz';
     } else if (i % 5 === 0) {
-      result += 'Buzz';
+      line += 'Buzz';
     } else {
-      result += i;
+      line += i;
     }
-    console.log(result);
+    console.log(line);
+    lines[i-1] = line;
   }
+  return lines;
+}
+
+// best of both separate worlds
+fizzBuzz[3] = n => {
+  const lines = [];
+  let line = '';
+  
+  console.log('\n\nfizzBuzz[3]');
+
+  for (let i = 1; i <= n; i++) {
+    line = '';
+    if (i % 3 === 0 && i % 5 === 0) {
+      line += 'FizzBuzz';
+    } else if (i % 3 === 0) {
+      line += 'Fizz';
+    } else if (i % 5 === 0) {
+      line += 'Buzz';
+    } else {
+      line += i;
+    }
+    console.log(line);
+    lines[i-1] = line;
+  }
+  return lines;
 }
 
 const compareTimes = (funcs, arg) => {
