@@ -1,23 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
-  <title>HTML Playground&mdash;Floats</title>
+  <title>3-column Layout with floats and clearfix</title>
   <link rel="stylesheet" href="style.css">
-  <h1>HTML Playground&mdash;Floats</h1>
 </head>
 
 <body>
-  <p>
-    Quick old-school boilerplate for code experiments
-  </p>
-  <nav>
-    <ul>
-      <li><a href="/layout-3col.html">3-column Layout</a></li>
-      <li><a href="/layout-grid.html">Grid layout</a></li>
-    </ul>
-  </nav>
+  <div class="wrapper">
+    <header>
+      <h1>3-column Layout with floats and clearfix</h1>
+    </header>
+    <main>
+      <section class="col-left">
+        <h2 lang="de">Tall column</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex quasi, officiis praesentium cumque velit neque, culpa totam esse amet quam obcaecati voluptatum quisquam unde sequi explicabo consectetur ipsum nihil!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex quasi, officiis praesentium cumque velit neque, culpa totam esse amet quam obcaecati voluptatum quisquam unde sequi explicabo consectetur ipsum nihil!
+        </p>
+      </section>
+      <section class="col-middle">
+        <h2>Short column</h2>
+        <p>Some text hey hey</p>
+
+      </section> <!--.col-middle-->
+      <section class="col-right">
+        <h2 lang="de">Noch Fragen?</h2>
+        <p>What questions came up during your experiment?</p>
+        <ul>
+          <li>What is the problem that clearfix solves?</li>
+          <li>What new CSS technologies should we use for layout instead?</li>
+          <li>What's the recommended usage for float now?</li>
+        </ul>
+      </section> <!--.col-right-->
+    </main>
+    <footer>
+      Footsie.
+    </footer>
+  </div><!--.wrapper-->
+
+  <!-- <script src="/scripts/fizz-buzz.js" type="module"></script>
+  <script src="/scripts/diff.js" type="module"></script> -->
+  <script src="/scripts/baskerville.js"></script>
+
+  <script>
+    function handleFrontEndSubmit(event) {
+      event.preventDefault();
+      alert(document.querySelector('#email').value);
+      return false;
+    }
+  </script>
+
 </body>
 
 </html>
