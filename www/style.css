@@ -19,51 +19,84 @@
 html {
   font-size: 16px;
   padding: 1rem 2rem;
+  background-color: whitesmoke;
 }
 
-/* This class aims to reduce clutter around the task at hand */
-.temp-focus {
-  margin: 150px 0 200px 0;
+h1 {
+  font-size: 2em;
 }
 
-h1 { font-size: 2em; }
-
-h2 { font-size: 1.2em; }
-
-input { background-color: #fff; }
-
-input,
-button,
-.inline-code {
-  padding: 0.5ch 1ch;
+h2 {
+  font-size: 1.2em;
 }
 
-code {
-  background-color: #fff;
-  line-height: 1.4em;
-  font-weight: strong;
+h3 {
+  font-weight: normal;
+  opacity: 0.95;
+}
+
+nav, h1, h2, h3, p, a, ul, ol, li, form {
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /* transparent */
+}
+
+a { color: hsl(180, 100%, 40%); }
+
+/* Layout */
+
+li {
+  margin-bottom: 1em;
+}
+
+header {
+  background-color: #ffe180;
   padding: 1em;
-  font-family: monospace;
-  font-size: 0.9em;
-  display: inline-block;
 }
 
-.inline {
-  margin-top: 0;
-  padding-left: 0;
+main {
+  width: 100%;
+  background-color: white;
 }
 
-.inline li {
-  font-size: 0.9em;
-  list-style: none;
-  display: inline;
-  padding-right: 1ch;
+main::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-li { 
-  margin-bottom: 0.5em;
+section {
+  padding: 1%;
 }
 
-#error {
-  color: crimson;
+.col-left {
+  background-color: #eba059;
+  float: left;
+  width: calc(94%/3);
+}
+
+.col-middle {
+  background-color: #8b3c76;
+  float: left;
+  width: calc(94%/3);
+}
+
+.col-right {
+  background-color: #41245c;
+  float: right;
+  width: calc(94%/3);
+}
+
+.output {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  border-top: 1px solid rgba(0,0,0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0,0,0, 0.1);
+}
+
+footer {
+  background-color: #b9e382;
+  color: rgba(65,79,47,1);
+  padding: 1em;
 }
